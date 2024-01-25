@@ -40,25 +40,25 @@ function passwordLength() {
 }
 
 function passwordLowercase() {
-  if (window.confirm("Would you like LOWERCASE letters included in your password? \n 'YES' to include lowercase. \n 'NO' for no lowercase.")) {
+  if (window.confirm("Would you like LOWERCASE letters included in your password? \n 'Ok' to include lowercase. \n 'Cancel' for no lowercase.")) {
     createPassword.push(lowercase);
   }
 }
 
 function passwordUppercase() {
-  if (window.confirm("Would you like UPPERCASE letters included in your password? \n 'YES' to include uppercase. \n 'NO' for no uppercase.")) {
+  if (window.confirm("Would you like UPPERCASE letters included in your password? \n 'Ok' to include uppercase. \n 'Cancel' for no uppercase.")) {
     createPassword.push(uppercase);
   }
 }
 
 function passwordNumeric() {
-  if (window.confirm("Would you like NUMBERS included in your password? \n 'YES' to include numbers. \n 'NO' for no numbers.")) {
+  if (window.confirm("Would you like NUMBERS included in your password? \n 'Ok' to include numbers. \n 'Cancel' for no numbers.")) {
     createPassword.push(numeric);
   }
 }
 
 function passwordSpecial() {
-  if (window.confirm("Would you like SPECIAL CHARACTERS included in your password? \n 'YES' to include special characters. \n 'NO' for no special characters.")) {
+  if (window.confirm("Would you like SPECIAL CHARACTERS included in your password? \n 'Ok' to include special characters. \n 'Cancel' for no special characters.")) {
     createPassword.push(special);
   }
 }
