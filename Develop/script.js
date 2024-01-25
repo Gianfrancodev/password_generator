@@ -51,5 +51,18 @@ function passwordUppercase() {
   }
 }
 
+function passwordNumeric() {
+  if (window.confirm("Would you like NUMBERS included in your password? \n 'YES' to include numbers. \n 'NO' for no numbers.")) {
+    createPassword.push(numeric);
+  }
+}
+
+function passwordSpecial() {
+  if (window.confirm("Would you like SPECIAL CHARACTERS included in your password? \n 'YES' to include special characters. \n 'NO' for no special characters.")) {
+    createPassword.push(special);
+  }
+}
+
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
