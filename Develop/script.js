@@ -63,6 +63,19 @@ function passwordSpecial() {
   }
 }
 
+function createUserPassword() {
 
+  var passwordTogether = createPassword.join("");
+  console.log(passwordTogether);
+  function getRandomCharacters(length) {
+    var newPassword = "";
+    for (var i = 0; i < length; i++) {
+      newPassword += passwordTogether.charAt(Math.floor(Math.random() * passwordTogether.length));
+    }
+    return newPassword;
+  }
+}
+
+  
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
